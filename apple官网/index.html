@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/banner.css"/>
+		<link rel="stylesheet" type="text/css" href="css/hbanner.css"/>
+	</head>
+	<body>
+		<!--
+		 0、分析页面结构
+		 1、先写html结构
+		 2、再写样式
+		 注意：分析页面是否包含移动端，如包含移动端一定要加上meta viewport
+		 -->
+		 <div class="nav">
+			 
+			
+		 	<a href="" class="logo"></a>
+		 	<a href="" class="text">Mac</a>
+		 	<a href="" class="text">iPad</a>
+		 	<a href="" class="text">iPhone</a>
+		 	<a href="" class="text">Watch</a>
+			<a href="" class="text">TV</a>
+		 	<a href="" class="text">Music</a>
+		 	<a href="" class="text">Support</a>
+		 	<a href="" class="search"></a>
+		 	<a href="" class="bug"></a>
+			<input type="checkbox" name="select" hidden="hidden" id="sec" value="" />
+			<label for="sec" class="toggleBtn">
+			 	<span class="line"></span>
+			 	<span class="line"></span>
+				</label>
+			 <!-- div.navpage>.navMain>(.searchInput+.navList>(a.navText)*7) -->
+			<div class="navpage">
+				<div class="navMain">
+					<div class="searchInput">
+						<div class="icon"></div>
+						<input type="text" placeholder="search apple.com">
+					</div>
+					<hr >
+						<div class="navList">
+							<a href="" class="navText">Mac</a>
+							<a href="" class="navText">iPad</a>
+							<a href="" class="navText">iPhone</a>
+							<a href="" class="navText">Watch</a>
+							<a href="" class="navText">TV</a>
+							<a href="" class="navText">Music</a>
+							<a href="" class="navText">Support</a>
+						</div>
+					</div>
+				</div>	
+		 </div>
+		<!-- banner -->
+		<!-- .banner>(h1+h2+p+(.link>(a*2))) -->
+		<div class="banner">
+			<h1>iPhone 11 Pro</h1>
+			<h2>一切都刚刚好</h2>
+			<p>折抵换购，仅 RMB 90 每月或 RMB 2149 起。</p>
+			<div class="link">
+				<a href="">Learn more></a>
+				<a href="">Buy></a>
+			</div>
+		</div>
+		
+		
+		<div class="hbanner">
+			<div class="banner">
+				<h1>iPhone 11 Pro</h1>
+				<h2>一切都刚刚好</h2>
+				<p>折抵换购，仅 RMB 90 每月或 RMB 2149 起。</p>
+				<div class="link">
+					<a href="">Learn more></a>
+					<a href="">Buy></a>
+				</div>
+			</div>
+			
+			<div class="banner">
+				<h1>iPhone 11 Pro</h1>
+				<h2>一切都刚刚好</h2>
+				<div class="link">
+					<a href="">Learn more></a>
+					<a href="">Buy></a>
+				</div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

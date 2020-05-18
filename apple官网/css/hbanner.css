@@ -1,0 +1,59 @@
+.hbanner{
+	display: flex;
+}
+.hbanner .banner{
+	flex: 1;
+	height: 480px;
+	background-color: #fafafa;
+	padding: 0;
+}
+.hbanner h1{
+	color: #111;
+	font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 52px;
+}
+.hbanner h2{
+	font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 4px;
+    color: #111;
+}
+.hbanner .banner:nth-child(1){
+	background-image: url(../img/hbanner1.jpg);
+	margin: 10px 5px 10px 10px;
+	background-image: 100% auto;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.hbanner .banner:nth-child(2){
+	background-image: url(../img/hbanner2.jpg);
+	margin: 10px 10px 10px 5px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/* 媒体查询，设定不同屏幕下banner和hbanner的样式 */
+@media only screen and (max-width:1100px) {
+	.banner{
+		height: 595px;
+	}
+}
+@media only screen and (max-width:740px) {
+	.banner{
+		height: 445px;
+		
+	}
+	.hbanner{
+		display: block;
+	}
+	.hbanner .banner{
+		width: calc(100%-20px);
+		height: 400px;
+	}
+}
